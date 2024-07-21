@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pedra , papel , tesoura</title>
+    <style>
+      .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .player-option,
+      .enemy-options {
+        width: 60%;
+      }
+
+      .title {
+        text-align: center;
+      }
+
+      .player-options img,
+      .enemy-options img {
+        max-width: 200px;
+        opacity: 0.3;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 style="text-align: center">Pedra , Papel , Tesouras</h1>
+    <hr />
+    <h2 style="text-align: center; border-bottom: 3px solid red;" class="vencedor"></h2>
+
+    <div class="container">
+      <div class="player-options">
+        <div class="title">
+          <h2>Você</h2>
+        </div>
+        <div>
+          <img opt="rock" src="./rock.png" alt="" />
+          <img opt="paper" src="./paper.png" alt="" />
+          <img opt="scisor" src="./scisor.png" alt="" />
+        </div>
+      </div>
+      <div class="enemy-options">
+        <hr />
+        <div class="title">
+          <h2>Inimigo</h2>
+        </div>
+        <div>
+          <img opt="rock" src="./rock.png" alt="" />
+          <img opt="paper" src="./paper.png" alt="" />
+          <img opt="scisor" src="./scisor.png" alt="" />
+        </div>
+      </div>
+    </div>
+    <script src="./index.js"></script>
+  </body>
+</html>
