@@ -12,9 +12,11 @@
         align-items: center;
       }
 
-      .player-option,
+      .player-options,
       .enemy-options {
-        width: 60%;
+        width: 40%;
+        display: grid;
+        justify-content: center;
       }
 
       .title {
@@ -30,9 +32,9 @@
     </style>
   </head>
   <body>
-    <h1 style="text-align: center">Pedra , Papel , Tesouras</h1>
+    <h1 style="text-align: center">Pedra , Papel , Tesoura</h1>
     <hr />
-    <h2 style="text-align: center; border-bottom: 3px solid red;" class="vencedor"></h2>
+    <h2 style="text-align: center" class="vencedor"></h2>
 
     <div class="container">
       <div class="player-options">
@@ -46,7 +48,6 @@
         </div>
       </div>
       <div class="enemy-options">
-        <hr />
         <div class="title">
           <h2>Inimigo</h2>
         </div>
